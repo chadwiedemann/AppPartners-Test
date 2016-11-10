@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Machinato.ttf">
+            <string>Machinato</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginSectionViewController">
+            <connections>
+                <outlet property="loginView" destination="QtE-ZL-H81" id="lAG-2J-EVL"/>
+                <outlet property="passwordTextField" destination="PIh-Vn-ch9" id="0SU-r8-pAp"/>
+                <outlet property="usernameTextField" destination="MDa-N5-3zw" id="KST-K2-pHr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginScreen" translatesAutoresizingMaskIntoConstraints="NO" id="gwp-Gy-iLI"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PIh-Vn-ch9">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="UHl-zb-epz"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="Machinato" family="Machinato" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MDa-N5-3zw">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="8pg-Z2-GuL"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="Machinato" family="Machinato" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QtE-ZL-H81">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginButton" translatesAutoresizingMaskIntoConstraints="NO" id="lg0-mG-VL8"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqM-jX-D73">
+                            <fontDescription key="fontDescription" name="Machinato" family="Machinato" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="lg0-mG-VL8" firstAttribute="leading" secondItem="QtE-ZL-H81" secondAttribute="leading" id="CAJ-ga-XFx"/>
+                        <constraint firstItem="lg0-mG-VL8" firstAttribute="top" secondItem="QtE-ZL-H81" secondAttribute="top" id="L9M-zj-w6c"/>
+                        <constraint firstItem="fqM-jX-D73" firstAttribute="centerX" secondItem="QtE-ZL-H81" secondAttribute="centerX" id="Xau-Z8-Gn3"/>
+                        <constraint firstAttribute="trailing" secondItem="lg0-mG-VL8" secondAttribute="trailing" id="k15-mV-uDM"/>
+                        <constraint firstAttribute="bottom" secondItem="lg0-mG-VL8" secondAttribute="bottom" id="lwx-ft-LCg"/>
+                        <constraint firstItem="fqM-jX-D73" firstAttribute="centerY" secondItem="QtE-ZL-H81" secondAttribute="centerY" id="p9i-vp-Yjq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QtE-ZL-H81" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="71C-Sv-Glu"/>
+                <constraint firstAttribute="bottom" secondItem="gwp-Gy-iLI" secondAttribute="bottom" id="89c-VH-T9y"/>
+                <constraint firstItem="MDa-N5-3zw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EtE-Hs-cRG"/>
+                <constraint firstAttribute="trailing" secondItem="QtE-ZL-H81" secondAttribute="trailing" id="Puq-cj-W6h"/>
+                <constraint firstItem="PIh-Vn-ch9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Wey-JD-Ssj"/>
+                <constraint firstItem="gwp-Gy-iLI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YyP-ad-nrH"/>
+                <constraint firstAttribute="trailing" secondItem="MDa-N5-3zw" secondAttribute="trailing" id="cwB-iw-Vqq"/>
+                <constraint firstAttribute="trailing" secondItem="gwp-Gy-iLI" secondAttribute="trailing" id="d5W-aK-Jhf"/>
+                <constraint firstAttribute="trailing" secondItem="PIh-Vn-ch9" secondAttribute="trailing" id="jpc-0Q-Vm4"/>
+                <constraint firstItem="MDa-N5-3zw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="85" id="kAB-Lp-1jS"/>
+                <constraint firstItem="PIh-Vn-ch9" firstAttribute="top" secondItem="MDa-N5-3zw" secondAttribute="bottom" constant="9" id="r9e-Qm-owj"/>
+                <constraint firstItem="gwp-Gy-iLI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="teO-Sr-1Fr"/>
+                <constraint firstItem="QtE-ZL-H81" firstAttribute="top" secondItem="PIh-Vn-ch9" secondAttribute="bottom" constant="25" id="x3d-e4-OKa"/>
+            </constraints>
+            <point key="canvasLocation" x="55.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="loginButton" width="243" height="54"/>
+        <image name="loginScreen" width="320" height="567"/>
+    </resources>
+</document>
